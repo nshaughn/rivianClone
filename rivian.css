@@ -1,0 +1,520 @@
+/* font for the website */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100&family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100&family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&family=Fira+Sans:wght@100&family=Roboto:wght@100&display=swap');
+
+* {
+    font-family: 'Fira Sans', sans-serif;
+    text-align: center;
+    border-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: auto;
+    background-color: white; 
+}
+
+header::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+/* top of the page */
+.signup { 
+    background-color: lightgray;
+    margin: auto;
+    padding: 15px;
+    font-size: 14px;
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* navbar */ 
+.container {
+    position: absolute;
+    top: 1%;
+    width: 95%;
+}
+
+/* rivian logo placement */
+.logo { 
+    float: left;
+    padding: 10px 0;
+    margin-left: 10px;
+}
+
+nav {  
+    float: right;
+}
+
+nav ul { 
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {  
+    display: inline-block;
+    margin-left: 70px;
+    padding-top: 20px;
+    position: relative;
+    font-weight: bolder;
+}
+
+nav a {  
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+nav a::after { /* adds lines under each nav section when hovering over */
+    content: '';
+    display: block;
+    height: 5px;
+    width: 100%;
+    background-color: black;
+    position: absolute;
+    width: 0;
+    transition: all ease-in-out 250ms;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+/* homepage picture */
+.jeep { 
+    object-fit: cover;
+    position: center;
+    width: 100%;
+}
+
+.navbar {
+    display: inline-block;
+    text-align: center;
+    margin-right: 40px;
+    
+}
+
+.navbar a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 25px;
+}
+.navcentre {
+    display: inline-block;
+    
+}
+
+.navright {
+    display: inline-block;
+    margin-left: 200px;
+    
+}
+
+.textjeep {
+    display: inline-block;
+    margin-top: 670px;
+    margin-right: 660px;
+    background-color: black;
+    color: white;  
+    font-size: 18px;
+    font-family: 'Courier Prime', monospace;
+    
+}
+
+.textjeep a {
+    color: white;
+    font-size: 16px;
+    font-family: 'Courier Prime', monospace;
+    text-decoration: underline;
+}
+
+.buttonjeep {
+    display: inline-block;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.buttonjeep a {
+    color: white;
+    text-decoration: none;
+}
+
+/* start of main section */
+/* few paragraphs about the cars */
+#secondps { 
+    display: flex;
+    background-color: white;
+    align-content: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#secondps div {  
+    background-color: white;
+    color: black;
+    margin: 10px;
+    width: 500px;
+    padding: 3rem;
+    font-weight: bold;
+} 
+
+#firstp {
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Fira Sans', sans-serif;
+    color: #151515;;
+    margin-right: 80px;
+    font-weight: bold;
+}
+
+#secondp {
+    font-weight: bold;
+    text-align: left;
+    font-family: 'Fira Sans', sans-serif;
+    color: #151515;;
+    font-size: 1rem;
+}
+
+/* the two pictures of jeeps side by side with prices */
+.vehiclepics {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    position: relative;
+    text-align: center;
+    color: white;
+    width: auto;
+    
+}
+
+.imageone {
+    background-color: #E9DFCA;
+    margin: 10px;
+}
+
+.imagetwo {
+    background-color: #E9DFCA;
+    margin: 10px;
+}
+
+.vehiclepics img {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.prices ul  {
+    list-style: none;
+}
+
+.r1tprice {
+    position: absolute;
+    bottom: 60px;
+    left: 50px;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+
+.r1sprice {
+    position: absolute;
+    bottom: 60px;
+    left: 55%;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+
+.vehiclepics a {
+    text-decoration: none;
+}
+  
+/*the video section */
+#video { 
+    background-color: grey;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 40px;
+    padding-bottom: 60px;
+    background-image: url("/webPageClone/rivianPhotos/backgroundVideo.jpeg");
+}
+
+#video div {
+    padding: 10px;
+    color: white;
+}
+
+#video div p {
+    font-size: 16px;
+    text-align: left;
+    margin-left: 190px;
+    font-family: 'Courier Prime', monospace;
+}
+
+#video div a {
+    text-align: right; 
+    color: white;
+    text-decoration: none;
+    font-family: 'Courier Prime', monospace;
+    font-size: 15px;
+} 
+
+#explore {
+    position: absolute;
+    left: 960px;  
+}
+
+/* 3 photos with links section */
+.rows {
+    display: flex;
+    padding: 90px 20px;
+  }
+
+.house {
+    height: 900px;
+}
+
+.service {
+    height: 430px;
+    margin-left: 60px;
+}
+
+.hat {
+    height: 430px;
+    margin-left: 60px;
+}
+
+.rows p {
+    text-align: left;
+    font-weight: bold;
+    font-family: 'Fira Sans', sans-serif;
+}   
+
+.twops {
+    margin-left: 60px;
+}
+
+.rows a {
+    text-decoration: none;
+    font-size: 30px;
+    color: black;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: bold;
+    
+}
+
+/* Picture of the woman */
+.womanpic {
+  position: relative;
+  text-align: center;
+  color: white;
+  margin: 0;
+}
+
+.womanpic img {
+    width: 100%;
+    margin: 0;
+    border: none;
+    height: 900px;
+}
+
+.photographer {
+  position: absolute;
+  bottom: 40px;
+  left: 26px;
+  background-color: black;
+  font-size: 18px;
+  font-family: 'Courier Prime', monospace;
+  }
+
+.nextphoto {
+  position: absolute;
+  bottom: 40px;
+  right: 26px;
+  background-color: black;
+
+}
+
+.womanpic a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-family: 'Courier Prime', monospace;
+}
+
+/*latest stories section*/
+.extrainfo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    font-family: Helvetica, sans-serif;
+    margin: 0;
+    
+}
+
+.extrainfo p::first-line {
+    font-size: 50px;
+    font-family: Helvetica, sans-serif;
+}
+
+.extrainfo a {
+    text-decoration: none;
+}
+
+.extrainfo div p {
+    font-size: 25px;
+    text-align: left;
+    margin-top: 150px;
+    margin-left: 100px;
+    
+}
+
+.extrainfo img {
+    margin-top: -4px;
+    margin-bottom: -4px;
+
+}
+
+.button {
+        background-color: black;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: left;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin-top: 50px;
+        margin-right: 350px;
+    } 
+
+
+/* subscribe section near the bottom */
+.subscribe {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    background-color: #EBC288;
+    padding: 70px;
+    margin: 0px;
+}
+
+.subscribe div p {
+    font-size: 25px;
+    text-align: left;
+    font-family: Helvetica, sans-serif;
+    margin-left: 50px;
+    
+}
+
+form {
+    padding-right: 500px;
+    padding-top: 20px;
+}
+
+label {
+    font-weight: 100;
+    margin: 0;
+    padding: 0%;
+}
+
+input {
+    width: 300%;
+    border: none;
+    background-color: #EBC288;
+    border-bottom: 2px solid black;
+}
+
+section {
+    margin: 0;
+}
+
+/* the last section with some extra links */
+.endinfo {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: space-between;
+    margin: 0px;
+    background-color: saddlebrown;
+    padding-top: 100px;
+    padding-bottom: 40px;
+    padding-right: 200px;
+}
+
+.endinfo p {
+    font-size: 20px;
+    color: white;
+    text-align: left;
+    font-family: Helvetica, sans-serif;
+}
+
+.endinfo a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Social links at the bottom and start of footer */
+.socials {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    padding-top: 10px;
+    padding-right: 70px;
+    list-style: none;
+    background-color: saddlebrown;
+}
+
+.socials li {
+    display: inline-block;
+    margin-left: 20px;
+    padding-top: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    width: 2%;
+} 
+
+.socials img {
+    height: 30px;
+}
+
+/* last info at bottom of the footer */
+.finallinks {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    box-sizing: inherit;
+    padding-bottom: 20px;
+    background-color: saddlebrown;
+    font-size: 12px;
+    padding-left: 80px;
+}
+
+.finallinks li {
+    display: inline-block;
+    margin-left: 20px;
+    padding-top: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    color: white;
+}
+
+.finallinks a {
+    color: white;
+    text-decoration: none;
+}
